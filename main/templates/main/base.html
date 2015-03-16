@@ -1,2 +1,18 @@
-{% block content %}
+{% load pipeline %}
+<html>
+<head>
+{% stylesheet 'main' %}
+{% stylesheet 'vendor' %}
+{% javascript 'vendor' %}
+{% block extra_head %}
 {% endblock %}
+{% block title %}
+{% endblock %}
+</head>
+<body>
+<div class="jumbotron">Jumbotron</div>
+{% block content %}
+Hello
+{% endblock content %}
+</body>
+</html>
