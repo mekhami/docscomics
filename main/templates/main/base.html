@@ -1,9 +1,7 @@
-{% load pipeline %}
+{% load staticfiles %}
 <html>
 <head>
-{% stylesheet 'main' %}
-{% stylesheet 'vendor' %}
-{% javascript 'vendor' %}
+<link href="{% static 'assets/css/main.min.css' %}" rel="stylesheet" type="text/css">
 {% block extra_head %}
 {% endblock %}
 {% block title %}
