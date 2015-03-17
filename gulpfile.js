@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -11,9 +11,15 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     del = require('del');
+    bower = require('gulp-bower');
+
+var config = {
+    bowerDir: './bower_components'
+}
 
 gulp.task('styles', function() {
-    return sass('main/static/sass/main.scss', {style: 'expanded' })
+    gulp.src(['main/static/sass/main.scss', config.bowerDir + '/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss']) 
+        .pipe(sass())
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest('dist/assets/css'))
         .pipe(rename({suffix: '.min'}))
@@ -56,4 +62,10 @@ gulp.task('watch', function() {
 
     livereload.listen();
     gulp.watch(['dist/**']).on('change', livereload.changed);
+    gulp.watch(['*/templates/**/*.html']).on('change', livereload.changed);
+});
+
+gulp.task('bower', function() {
+    return bower()
+        .pipe(gulp.dest(config.bowerDir))
 });

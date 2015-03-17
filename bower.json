@@ -1,0 +1,27 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mekhami/docscomics",
+  "authors": [
+    "Lawrence <lawrence.vanderpool@gmail.com>"
+  ],
+  "description": "docs comics and games",
+  "keywords": [
+    "docs",
+    "comics",
+    "games"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "fontawesome": "~4.3.0"
+  }
+}
