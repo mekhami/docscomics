@@ -1,0 +1,10 @@
+*~
+*.pyc
+*.swp
+db.sqlite3
+*.swp
+.env
+.sass-cache/
+bower_components/
+dist/
+node_modules/
