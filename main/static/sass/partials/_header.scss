@@ -1,0 +1,41 @@
+.navbar-header {
+    width: 100%;
+    border-bottom: 1px solid silver;
+    top: 0;
+    left: 0;
+
+    .nav-menu-bar {
+        position: absolute;
+        top: 0px; 
+        height: auto;
+        margin-left: 120px;
+        margin-right: 120px;
+
+        ul {
+            width: 100%;
+            table-layout: fixed;
+            display: table;
+            li {
+                text-align: center;
+                list-style-type: none;
+                display: table-cell;
+                line-height: 80px;
+                &:hover {
+                    background-color: rgba(0, 255, 0, 0.3);
+                }
+            }
+        }
+    }
+    .docs-logo {
+        width: 120px;
+        height: 80px;
+        background-color: red;
+    }
+    .social-icons {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+}
+
+

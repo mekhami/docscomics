@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
-    del = require('del');
+    del = require('del'),
     bower = require('gulp-bower');
 
 var config = {
@@ -18,7 +18,7 @@ var config = {
 }
 
 gulp.task('styles', function() {
-    gulp.src(['main/static/sass/main.scss', config.bowerDir + '/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss']) 
+    return gulp.src('main/static/sass/main.scss')
         .pipe(sass())
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(gulp.dest('dist/assets/css'))
