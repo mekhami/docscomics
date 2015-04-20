@@ -30,7 +30,7 @@ gulp.task('styles', function() {
 
 gulp.task('images', function() {
     return gulp.src('*/static/images/**/*')
-        .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
         .pipe(gulp.dest('dist/assets/img'))
         .pipe(notify({ message: 'Images task complete' }));
 });

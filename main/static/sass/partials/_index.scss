@@ -1,0 +1,63 @@
+.hero-wrapper {
+    .hero-logo {
+        height: 300px;
+        width: 300px;
+        display: block;
+        border-radius: 50%;
+        margin: 0 auto 0 auto;
+    }
+}
+
+.cta {
+    display: inline-block;
+    height: 70px;
+    width: 200px;
+    background: orange;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+.bios-wrapper {
+    .square-grid {
+        .square-grid-image {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .square-grid-text {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left;
+            min-height: 100px;
+        }
+    }
+}
+.map-wrapper {
+    height: 500px;
+    position: relative;
+    #googlemaps {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .store-info {
+        position: absolute;
+        top: 20;
+        left: 100;
+        z-index: 1;
+        width: 300px;
+        margin: 60px auto 0;
+        padding: 10px;
+        background: white;
+        height: auto;
+        opacity: .45;
+        color: black;
+    }
+}

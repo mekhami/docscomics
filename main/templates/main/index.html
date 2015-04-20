@@ -1,6 +1,92 @@
 {% extends "main/base.html" %}
+{% load staticfiles %}
 
 {% block content %}
-Hello
+<div class="container-fluid hero-wrapper">
+    <div class="row">
+        <img class="hero-logo" src="{% static 'assets/img/docslogo-large-bg.png' %}"/>
+        <span class="cta"><a href="#">Visit the Shop</a></span><span class="cta"><a href="#">See our Schedule</a></span>
+    </div>
+</div>
+<div class="container-fluid schedule-wrapper">
+    <h1>Schedule</h1>
+</div>
+<div class="container bios-wrapper">
+    <h1>Staff Bios</h1>
+    <div class="square-grid">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="square-grid-item">
+                    <div class="square-grid-image">
+                        <img src="{% static 'assets/img/main/static/images/kappa.jpg' %}" alt="Kappa" />
+                    </div>
+                    <div class="square-grid-text">
+                        <p>This is a Kappa Kappa Kappa bio! In here will be some text about Kappa! Do you know our lord and savior Kappa?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid map-wrapper">
+    <div id="googlemaps"></div>
+    <div class="store-info">
+        <p>Google Map and Store Location</p>
+    </div>
+</div>
+
+
+
+
 {% endblock content %}
 
